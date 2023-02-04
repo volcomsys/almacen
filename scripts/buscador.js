@@ -79,7 +79,7 @@ function doSearch() {
 
     } else {
 
-        lastTR.classList.add("green");
+        lastTR.classList.add("red");
 
         td.innerHTML = "No se han encontrado coincidencias";
 
