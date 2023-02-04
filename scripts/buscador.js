@@ -78,6 +78,7 @@ function doSearch() {
         td.innerHTML = "Se ha encontrado " + total + " coincidencia" + ((total > 1) ? "s" : "");
 
     } else {
+        lastTR.classList.remove("green");
 
         lastTR.classList.add("red");
 
