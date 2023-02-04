@@ -73,6 +73,8 @@ function doSearch() {
 
     } else if (total) {
 
+        lastTR.classList.add("green");
+
         td.innerHTML = "Se ha encontrado " + total + " coincidencia" + ((total > 1) ? "s" : "");
 
     } else {
