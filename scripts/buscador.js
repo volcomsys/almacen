@@ -65,13 +65,15 @@ function doSearch() {
 
     const td = lastTR.querySelector("td");
 
-    lastTR.classList.remove("hide", "red");
-
+    lastTR.classList.remove("hide", "red", "green");
+    
     if (searchText == "") {
 
         lastTR.classList.add("hide");
 
     } else if (total) {
+
+        lastTR.classList.add("green");
 
         td.innerHTML = "Se ha encontrado " + total + " coincidencia" + ((total > 1) ? "s" : "");
 
