@@ -1,13 +1,20 @@
 body  {
-	background-color:	#b5a789;
+  background-color:	#b5a789;
 	font-family:		Georgia, "Times New Roman", Times, serif;
 	font-size:			small;
 	margin:				0px;
 }
+header {
+  width: 100%;
+  left:0;
+  right: 5px;
+  top:0;
+  position: fixed;
+}
 
 header.top {
 	background-color:	#675c47;
-    margin: 10px 10px 0px 10px;
+  margin: 10px 10px 0px 10px;
 	height:				108px;
 }
 
