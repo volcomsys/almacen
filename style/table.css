@@ -3,6 +3,7 @@ body  {
 	font-family:		Georgia, "Times New Roman", Times, serif;
 	font-size:			small;
 	margin:				0px;
+  padding-top: 110px;
 }
 header {
   width: 100%;
