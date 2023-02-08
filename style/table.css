@@ -1,22 +1,57 @@
-body  {
-  background-color:	#b5a789;
-	font-family:		Georgia, "Times New Roman", Times, serif;
-	font-size:			small;
-	margin:				0px;
-  padding-top: 110px;
+body {
+  background-color: #b5a789;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+  margin: 1em;
+  padding-top: 50px;
 }
+
 header {
   width: 100%;
-  left:0;
+  left: 0;
   right: 5px;
-  top:0;
+  top: 0;
   position: fixed;
 }
 
 header.top {
-	background-color:	#675c47;
-  margin: 10px 10px 0px 10px;
-	height:				108px;
+  background-color: #675c47;
+  background-size: cover;
+  margin: 0px;
+  height: 30px;
+}
+
+nav {
+  position: fixed;
+  background-color: #675c47;
+  /* background-image: url(images/fondo.gif); */
+  margin: 10px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px 0px 5px 0px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #5d0f7a;
+  border-bottom: none;
+  font-weight: blod;
+}
+
+nav ul li.selected {
+  background: #cccc99 url(images/background.gif);
+}
+
+nav ul li a:hover {
+  color: green;
 }
 
 div#tables {
@@ -28,47 +63,55 @@ div#tables {
 }
 
 datos {
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 1em;
-  }
-  
-  datos tr:nth-child(even) {
-    background: #ccc;
-  }
-  
-  datos td {
-    padding: 5px;
-  }
-  
-  datos tr.noSearch {
-    background: White;
-    font-size: 0.8em;
-  }
-  
-  datos tr.noSearch td {
-    padding-top: 10px;
-    text-align: right;
-  }
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1em;
+}
 
-.hide {display:none;}
+datos tr:nth-child(even) {
+  background: #ccc;
+}
 
-.red {color:Red;}
+datos td {
+  padding: 5px;
+}
 
-.green {color:green;}
+datos tr.noSearch {
+  background: White;
+  font-size: 0.8em;
+}
+
+datos tr.noSearch td {
+  padding-top: 10px;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.red {
+  color: Red;
+}
+
+.green {
+  color: green;
+}
 
 
 a:link {
-	color:				#b76666;
-	text-decoration:	none;
-	border-bottom:		thin dotted #b76666;
+  color: #b76666;
+  text-decoration: none;
+  border-bottom: thin dotted #b76666;
 }
 
 footer {
-	background:	#675c47;
-	color:		#efe5d0;
-	text-align:	center;
-	padding:	15px;
-    margin: 10px 10px 10px 10px;
-	font-size:	90%;
+  background-color: #675c47;
+  color: #e7e5d9;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 90%;
+  clear: left;
+  width: auto;
 }

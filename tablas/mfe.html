@@ -1,221 +1,227 @@
 ﻿<!DCTYPE html>
     <html xmlns:th="http://www.thymeleaf.org" lang="es" xml:lang="es">
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../style/table.css">
         <meta charset="UTF-8" />
-        <link rel="shortcut icon" href="../img/stock.png">
-        <title>MFE</title>
+        <link rel="shortcut icon" href="../img/stock.png"> <!--Icono de ventana-->
+        <title>Mfe</title>
         <script src="../scripts/buscador.js" type="text/javascript"></script>
     </head>
-
     <body>
-        <h3>MATERIAL MFE</h3>
-        <form>
-            Buscar <input id="searchTerm" type="text" onkeyup="doSearch()" />
-        </form>
-        <div id="tables">
-            <table id="datos">
-                <tr>
-                    <th>Id</th>
-                    <th>Descripción</th>
-                    <th>Total equipos disponibles</th>
-                    <th>Equipos en coche</th>
-                    <th>Observaciones</th>
-                </tr>
-                <tr>
-                    <td>419970</td>
-                    <td>RCCLH 200 Teldat Connect 104</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419978</td>
-                    <td>Switch Netgear FSM 52 10P + 2 LAN</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419979</td>
-                    <td>Switch Netgear FSM 7226 24P + 2CE LAN</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419980</td>
-                    <td>RCTVH 2001 Teldat Connect 104 V</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419985</td>
-                    <td>OneAccessOne 410 Sum</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419993</td>
-                    <td>Teldat RTCMH001 104 KF</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419994</td>
-                    <td>SW8 Switch 8PG Huawei S57008P</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>419995</td>
-                    <td>Router FTTH Huawei AR 1220EVW</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>423032</td>
-                    <td>Cascos cableados S12 Plantronics</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>423206</td>
-                    <td>Cascos Legend CS c/descolgador elect. APS-11</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>423209</td>
-                    <td>Cascos CS540 c/descolgador elect. APS-10</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>423217</td>
-                </tr>
-                <tr>
-                    <td>423210</td>
-                    <td>Cascos CS540 c/descolgador mecénico HL-10</td>
-                    <td>2</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>423217</td>
-                    <td>Cascos Legend CS c/descolgador elect. APS-11</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>423209</td>
-                </tr>
-                <tr>
-                    <td>423219</td>
-                    <td>Cascos Legend CS c/descolgador macánico HL-10</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>423226</td>
-                    <td>Cascos Voyager 5200 Office + APS11 UNIFY OS</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>423209</td>
-                </tr>
-                <tr>
-                    <td>424938</td>
-                    <td>OpenScape DECT SL5</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>424939</td>
-                    <td>Cargador OpenScape SL5</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>425000</td>
-                    <td>Teléfono 6865 MITEL</td>
-                    <td>4</td>
-                    <td>1</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>425002</td>
-                    <td>Antena 12 MITEL</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>425005</td>
-                    <td>Telf inalámbrico 622 MITEL</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>425008</td>
-                    <td>Teléfono 6867 MITEL</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>425012</td>
-                    <td>Terminal DECT 112 + Bat MITEL</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>426115</td>
-                    <td>Terminal avanzado Unify FD</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>426116</td>
-                    <td>Terminal básico Unify FD</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>426117</td>
-                    <td>Terminal DECT Basico C430H - Unify </td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td></td>
-                </tr>
-                <tr class='noSearch hide'>
-                    <td colspan="5"></td>
-                </tr>
-
-            </table>
+        <header class="top">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="ibercom.html">IBERCOM</a></li>
+                    <li class="selected"><a href="../almacen/tablas/ibercom.html">MFE</a></li>
+                    <li><a href="centrales.html">CENTRALES</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="tableContainer">
+            <div id="tableRow">
+                <section id="mfe">
+                    <form>
+                        Buscar <input id="searchTerm" type="text" onkeyup="doSearch()" />
+                    </form>
+                    <div id="tables">
+                        <table id="datos">
+                            <tr>
+                                <th style="text-align: left;">Id</th>
+                                <th style="text-align: left;">Descripción</th>
+                                <th style="text-align: left;">Cantidad</th>
+                                <th style="text-align: left;">Stock téc.</th>
+                                <th style="text-align: left;">Observaciones</th>
+                            </tr>
+                            <tr>
+                                <td>419970</td>
+                                <td>RCCLH 200 Teldat Connect 104</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419978</td>
+                                <td>Switch Netgear FSM 52 10P + 2 LAN</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419979</td>
+                                <td>Switch Netgear FSM 7226 24P + 2CE LAN</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419980</td>
+                                <td>RCTVH 2001 Teldat Connect 104 V</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419985</td>
+                                <td>OneAccessOne 410 Sum</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419993</td>
+                                <td>Teldat RTCMH001 104 KF</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419994</td>
+                                <td>SW8 Switch 8PG Huawei S57008P</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>419995</td>
+                                <td>Router FTTH Huawei AR 1220EVW</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>423032</td>
+                                <td>Cascos cableados S12 Plantronics</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>423206</td>
+                                <td>Cascos Legend CS c/descolgador elect. APS-11</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>423209</td>
+                                <td>Cascos CS540 c/descolgador elect. APS-10</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>423217</td>
+                            </tr>
+                            <tr>
+                                <td>423210</td>
+                                <td>Cascos CS540 c/descolgador mecénico HL-10</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>423217</td>
+                                <td>Cascos Legend CS c/descolgador elect. APS-11</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>423209</td>
+                            </tr>
+                            <tr>
+                                <td>423219</td>
+                                <td>Cascos Legend CS c/descolgador macánico HL-10</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>423226</td>
+                                <td>Cascos Voyager 5200 Office + APS11 UNIFY OS</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>423209</td>
+                            </tr>
+                            <tr>
+                                <td>424938</td>
+                                <td>OpenScape DECT SL5</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>424939</td>
+                                <td>Cargador OpenScape SL5</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>425000</td>
+                                <td>Teléfono 6865 MITEL</td>
+                                <td>4</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>425002</td>
+                                <td>Antena 12 MITEL</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>425005</td>
+                                <td>Telf inalámbrico 622 MITEL</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>425008</td>
+                                <td>Teléfono 6867 MITEL</td>
+                                <td>1</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>425012</td>
+                                <td>Terminal DECT 112 + Bat MITEL</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>426115</td>
+                                <td>Terminal avanzado Unify FD</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>426116</td>
+                                <td>Terminal básico Unify FD</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>426117</td>
+                                <td>Terminal DECT Basico C430H - Unify </td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                            </tr>
+                            <tr class='noSearch hide'>
+                                <td colspan="5"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
         </div>
-        <br />
-        <ul>
-            <li><a href="../tablas/ibercom.html">IBERCOM</a></li>
-            <li><a href="../tablas/centrales.html">CENTRALES</a></li>
-        </ul>
-        <br />
-        <a href="../index.html">MENU</a>
-
         <footer>
-            <p>Copyright © 2023 All Rights Reserved</p>
+            &copy; 2023 | Mza desing studio. All Rights Reserved</p>
+            <br>
+            All trademarks and registered trademarks appearing on
+            this site are the property of their respective owners.
         </footer>
     </body>
-
-    </html>
+    </htm>
