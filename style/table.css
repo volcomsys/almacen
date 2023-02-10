@@ -24,6 +24,7 @@ header.top {
 nav {
   position: fixed;
   background-color: #675c47;
+  color: #e7e5d9;
   /* background-image: url(images/fondo.gif); */
   margin: 10px;
 }
